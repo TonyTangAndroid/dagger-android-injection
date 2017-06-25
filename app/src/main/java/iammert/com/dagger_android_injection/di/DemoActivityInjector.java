@@ -16,16 +16,16 @@ import iammert.com.dagger_android_injection.ui.main.MainActivityComponent;
  * Created by mertsimsek on 25/05/2017.
  */
 @Module
-public abstract class ActivityBuilder {
+public abstract class DemoActivityInjector {
 
     @Binds
     @IntoMap
     @ActivityKey(MainActivity.class)
-    abstract AndroidInjector.Factory<? extends Activity> bindMainActivity(MainActivityComponent.Builder builder);
+    abstract AndroidInjector.Factory<? extends Activity> injectMainActivity(MainActivityComponent.Builder builder);
 
     @Binds
     @IntoMap
     @ActivityKey(DetailActivity.class)
-    abstract AndroidInjector.Factory<? extends Activity> bindDetailActivity(DetailActivityComponent.Builder builder);
+    abstract AndroidInjector.Factory<? extends Activity> injectDetailActivity(DetailActivityComponent.Builder builder);
 
 }

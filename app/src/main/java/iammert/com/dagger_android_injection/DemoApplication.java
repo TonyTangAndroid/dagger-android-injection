@@ -7,14 +7,14 @@ import javax.inject.Inject;
 
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasActivityInjector;
-import iammert.com.dagger_android_injection.di.DaggerAppComponent;
+import iammert.com.dagger_android_injection.di.DaggerDemoApplicationComponent;
 
 
 /**
  * Created by mertsimsek on 25/05/2017.
  */
 
-public class AndroidSampleApp extends Application implements HasActivityInjector {
+public class DemoApplication extends Application implements HasActivityInjector {
 
     @Inject
     DispatchingAndroidInjector<Activity> activityDispatchingAndroidInjector;
@@ -22,7 +22,7 @@ public class AndroidSampleApp extends Application implements HasActivityInjector
     @Override
     public void onCreate() {
         super.onCreate();
-        DaggerAppComponent
+        DaggerDemoApplicationComponent
                 .builder()
                 .application(this)
                 .build()

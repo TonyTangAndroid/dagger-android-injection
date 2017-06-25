@@ -16,7 +16,7 @@ import iammert.com.dagger_android_injection.ui.main.MainActivityComponent;
 @Module(subcomponents = {
         MainActivityComponent.class,
         DetailActivityComponent.class})
-public class AppModule {
+public class DemoApplicationModule {
 
     @Provides
     @Singleton

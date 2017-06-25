@@ -5,22 +5,24 @@ import android.app.Application;
 import dagger.BindsInstance;
 import dagger.Component;
 import dagger.android.AndroidInjectionModule;
-import iammert.com.dagger_android_injection.AndroidSampleApp;
+import iammert.com.dagger_android_injection.DemoApplication;
 
 /**
  * Created by mertsimsek on 25/05/2017.
  */
 @Component(modules = {
         AndroidInjectionModule.class,
-        AppModule.class,
-        ActivityBuilder.class})
-public interface AppComponent {
+        DemoApplicationModule.class,
+        DemoActivityInjector.class})
+public interface DemoApplicationComponent {
+
+    void inject(DemoApplication app);
 
     @Component.Builder
     interface Builder {
-        @BindsInstance Builder application(Application application);
-        AppComponent build();
-    }
+        @BindsInstance
+        Builder application(Application application);
 
-    void inject(AndroidSampleApp app);
+        DemoApplicationComponent build();
+    }
 }

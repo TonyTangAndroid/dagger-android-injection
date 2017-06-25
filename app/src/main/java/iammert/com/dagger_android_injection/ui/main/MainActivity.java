@@ -1,8 +1,8 @@
 package iammert.com.dagger_android_injection.ui.main;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -12,7 +12,7 @@ import dagger.android.AndroidInjection;
 import iammert.com.dagger_android_injection.R;
 import iammert.com.dagger_android_injection.ui.detail.DetailActivity;
 
-public class MainActivity extends AppCompatActivity implements MainView{
+public class MainActivity extends AppCompatActivity implements MainView {
 
     @Inject
     MainPresenter mainPresenter;
