@@ -15,22 +15,26 @@ public class MainActivity extends BaseActivity implements MainView {
 
     @Inject
     MainPresenter mainPresenter;
+    private View view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mainPresenter.loadMain();
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+        view = findViewById(R.id.button);
+        view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, DetailActivity.class));
             }
         });
+        mainPresenter.loadMain();
+
     }
 
     @Override
     public void onMainLoaded() {
         Log.v("TEST", "Main page is loaded.");
+        view.callOnClick();
     }
 }
