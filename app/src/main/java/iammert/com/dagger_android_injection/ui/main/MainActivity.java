@@ -9,7 +9,7 @@ import javax.inject.Inject;
 
 import iammert.com.dagger_android_injection.R;
 import iammert.com.dagger_android_injection.ui.detail.BaseActivity;
-import iammert.com.dagger_android_injection.ui.detail.DetailActivity;
+import iammert.com.dagger_android_injection.ui.detail.activity.DetailActivity;
 
 public class MainActivity extends BaseActivity implements MainView {
 

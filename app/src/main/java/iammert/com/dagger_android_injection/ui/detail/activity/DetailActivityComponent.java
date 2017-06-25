@@ -1,15 +1,13 @@
-package iammert.com.dagger_android_injection.ui.detail;
+package iammert.com.dagger_android_injection.ui.detail.activity;
 
 import dagger.Subcomponent;
 import dagger.android.AndroidInjector;
+import iammert.com.dagger_android_injection.ui.detail.NoteDetailFragmentProvider;
 
 /**
  * Created by mertsimsek on 30/05/2017.
  */
-@Subcomponent(modules = {
-        DetailActivityModule.class,
-        DetailFragmentProvider.class,
-        NoteDetailFragmentProvider.class})
+@Subcomponent(modules = {NoteDetailFragmentProvider.class})
 public interface DetailActivityComponent extends AndroidInjector<DetailActivity> {
 
     @Subcomponent.Builder

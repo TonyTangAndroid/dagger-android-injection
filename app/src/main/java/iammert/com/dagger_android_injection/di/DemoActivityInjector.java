@@ -7,8 +7,8 @@ import dagger.Module;
 import dagger.android.ActivityKey;
 import dagger.android.AndroidInjector;
 import dagger.multibindings.IntoMap;
-import iammert.com.dagger_android_injection.ui.detail.DetailActivity;
-import iammert.com.dagger_android_injection.ui.detail.DetailActivityComponent;
+import iammert.com.dagger_android_injection.ui.detail.activity.DetailActivity;
+import iammert.com.dagger_android_injection.ui.detail.activity.DetailActivityComponent;
 import iammert.com.dagger_android_injection.ui.main.MainActivity;
 import iammert.com.dagger_android_injection.ui.main.MainActivityComponent;
 

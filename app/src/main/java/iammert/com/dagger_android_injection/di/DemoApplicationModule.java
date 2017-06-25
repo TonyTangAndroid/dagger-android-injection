@@ -7,7 +7,7 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import iammert.com.dagger_android_injection.ui.detail.DetailActivityComponent;
+import iammert.com.dagger_android_injection.ui.detail.activity.DetailActivityComponent;
 import iammert.com.dagger_android_injection.ui.main.MainActivityComponent;
 
 /**

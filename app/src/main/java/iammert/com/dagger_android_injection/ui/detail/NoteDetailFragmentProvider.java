@@ -12,8 +12,10 @@ import iammert.com.dagger_android_injection.ui.detail.fragment.v2.NoteDetailFrag
 
 /**
  * Created by mertsimsek on 02/06/2017.
+ * <p>
+ * NoteDetailFragmentComponent.class,
  */
-@Module
+@Module(subcomponents = {NoteDetailFragmentComponent.class})
 public abstract class NoteDetailFragmentProvider {
 
     @Binds
