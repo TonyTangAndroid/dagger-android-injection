@@ -4,11 +4,12 @@ import dagger.Module;
 import dagger.Provides;
 import iammert.com.dagger_android_injection.data.ApiService;
 import iammert.com.dagger_android_injection.ui.detail.fragment.DetailFragmentComponent;
+import iammert.com.dagger_android_injection.ui.detail.fragment.v2.NoteDetailFragmentComponent;
 
 /**
  * Created by mertsimsek on 30/05/2017.
  */
-@Module(subcomponents = DetailFragmentComponent.class)
+@Module(subcomponents = {DetailFragmentComponent.class, NoteDetailFragmentComponent.class})
 public class DetailActivityModule {
 
     @Provides

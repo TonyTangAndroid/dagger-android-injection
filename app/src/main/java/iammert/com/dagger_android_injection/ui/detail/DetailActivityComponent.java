@@ -8,7 +8,8 @@ import dagger.android.AndroidInjector;
  */
 @Subcomponent(modules = {
         DetailActivityModule.class,
-        DetailFragmentProvider.class})
+        DetailFragmentProvider.class,
+        NoteDetailFragmentProvider.class})
 public interface DetailActivityComponent extends AndroidInjector<DetailActivity> {
 
     @Subcomponent.Builder
